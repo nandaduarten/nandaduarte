@@ -1,0 +1,87 @@
+body {
+    background-color: #dddddd;
+    color: rgba(0, 0, 0, 1); /* Cor do texto em preto */
+
+}
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+    padding: 10px 10px 10px 10px; /* Espaçamento interno */
+
+}
+header#cabecalho img#icone {
+    position: absolute;
+    left: 780px; /* Alinha o ícone à direita */
+    top: 40px;
+}
+header#cabecalho {
+    
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+/* formatação de imagens com legendas */
+figure.fotolegenda {
+    position: relative;
+    border: 8px solid white; /* Borda branca de 8px */
+    box-shadow: 1px 1px 4px black; /* Sombra para dar profundidade */
+}
+figure.fotolegenda img {
+    width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: 100%; /* Ajusta a altura da imagem ao contêiner */
+}
+figure.fotolegenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top : 0px;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo preto com transparência */
+    color: white; /* Texto branco */
+    width: 100%; /* Largura total do contêiner */
+    height: 100%; /* Altura total do contêiner */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui o padding na largura/altura total */
+    transition: opacity 1; /* Transição suave para a opacidade */
+}
+figure.fotolegenda:hover figcaption {
+    opacity: 1;
+
+}
+
+/* estilo do menu */
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    list-style: none; /* Remove os marcadores da lista */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    position: absolute; /* Posiciona o menu de forma absoluta */
+    top: -20px; /* Alinha o menu ao topo */
+    left: 400px; /* Alinha o menu à direita */
+    
+
+}
+nav#menu li {
+    display: inline-block; /* Exibe os itens do menu em linha */
+   background-color: #888787;
+   padding: 10px; /* Espaçamento interno */
+   margin: 2px; /* Margem entre os itens */;
+   transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+nav#menu li:hover {
+    background-color: #606060; /* Cor de fundo ao passar o mouse */
+}
+nav#menu h1 {
+    display: none; /* Esconde o título do menu */
+}
+nav#menu a {
+    color: black;
+    text-decoration: none; /* Remove o sublinhado dos links */
+
+}
+nav#menu a:hover {
+    color: white; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
