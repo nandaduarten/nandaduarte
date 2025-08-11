@@ -16,13 +16,23 @@ div#interface {
 
 }
 header#cabecalho img#icone {
-    position: absolute;
+    position: static; /* Permite que o ícone seja posicionado de forma estática */
+    max-width: 120px;
     left: 1000px; /* Alinha o ícone à direita */
     top: 40px;
 }
+header#cabecalho hgroup {
+    flex: 1; /* Permite que o grupo de cabeçalhos ocupe o espaço restante */
+} 
 header#cabecalho {
-    border-bottom: 1px solid #030303 solid; /* Borda inferior do cabeçalho */
-    height: 150px; /* Altura do cabeçalho */
+    
+    border-bottom: 1px solid #030303;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    display: flex; /* Alinha logo e textos na horizontal */
+    justify-content: space-between; /* Espaço entre logo e menu */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Espaço interno */
+    position: relative; /* Base para posicionar itens internos */
 }
 header#cabecalho h1 {
     font-family: 'fontelogo', Helvetica, sans-serif;
@@ -50,23 +60,24 @@ figure.fotolegenda {
     border: 8px solid white; /* Borda branca de 8px */
     box-shadow: 1px 1px 4px black; /* Sombra para dar profundidade */
     width: 60%; /* Ajusta a largura do contêiner */
-    margin: 60px auto; /* Centraliza o contêiner com margem */
+    margin: 30px auto; /* Centraliza o contêiner com margem */
 }
 figure.fotolegenda img {
     width: 100%; /* Ajusta a largura da imagem ao contêiner */
-    height: 100%; /* Ajusta a altura da imagem ao contêiner */
+    height: auto; /* Ajusta a altura da imagem ao contêiner */
 }
 figure.fotolegenda figcaption {
     opacity: 0;
     position: absolute;
-    top : 0px;
+    bottom: 0px; /* Posiciona a legenda na parte inferior */
+    left: 0px;
     background-color: rgba(0, 0, 0, 0.4); /* Fundo preto com transparência */
     color: white; /* Texto branco */
     width: 100%; /* Largura total do contêiner */
-    height: 100%; /* Altura total do contêiner */
+    height: auto; /* Altura total do contêiner */
     padding: 10px; /* Espaçamento interno */
     box-sizing: border-box; /* Inclui o padding na largura/altura total */
-    transition: opacity 1; /* Transição suave para a opacidade */
+    transition: opacity 1s; /* Transição suave para a opacidade */
 }
 figure.fotolegenda:hover figcaption {
     opacity: 1;
@@ -80,17 +91,16 @@ nav#menu {
 nav#menu ul {
     list-style: none; /* Remove os marcadores da lista */
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    position: absolute; /* Posiciona o menu de forma absoluta */
-    top: -20px; /* Alinha o menu ao topo */
-    left: auto; /* Alinha o menu à direita */
+    display: flex; /* Exibe os itens do menu em linha */
+    gap: 5px; /* Espaçamento entre os itens */
+    margin: 0; /* Remove a margem da lista */
+    padding: 0; /* Remove o preenchimento da lista */
     
 
 }
 nav#menu li {
-    display: inline-block; /* Exibe os itens do menu em linha */
    background-color: #888787;
    padding: 10px; /* Espaçamento interno */
-   margin: 2px; /* Margem entre os itens */;
    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 nav#menu li:hover {
@@ -110,16 +120,38 @@ nav#menu a:hover {
 }
 section#corpo {
     display: block; /* Exibe o corpo como um bloco */
-    width: 500px; /* Largura do corpo */
+    width: 60%; /* Largura do corpo */
     float: left; /* Permite que o corpo flutue à esquerda */
     border-right: 1px solid #000000; /* Borda direita do corpo */
     padding-right: 20px; /* Espaçamento interno à direita */
 }
+
+article#noticiaprincipal h2 {
+    font-size: 12pt; /* Tamanho da fonte do artigo principal */
+    color: #606060; /* Cor do texto do artigo principal */
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px; /* Espaçamento interno do artigo principal */
+    margin: 10px 0px 10px 0px; /* Margem do artigo principal */
+}
+
+table#tabelaspec {
+    border: 1px solid #000000; /* Borda da tabela */
+    border-spacing: 0px; /* Espaçamento entre as células */
+   margin: center;
+}
+
+table#tabelaspec td {
+    border: 1px solid #000000; /* Borda das células */
+    padding: 10px; /* Espaçamento interno das células */
+}
+
+
 aside#lateral {
     display: block;
-    width: 350px; /* Largura da barra lateral */
+    width: 35%; /* Largura da barra lateral */
     float: right; /* Permite que a barra lateral flutue à direita */
 }
+
 footer#rodape {
     clear: both; /* Limpa os elementos flutuantes */
     border-top: 1px solid #030303; /* Borda superior do rodapé */
