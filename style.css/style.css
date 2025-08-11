@@ -1,6 +1,10 @@
+@font-face {
+    font-family: "fontelogo";
+    src: url("../fonte/Goboldbold.otf");
+}
 body {
     background-color: #dddddd;
-    color: rgba(0, 0, 0, 1); /* Cor do texto em preto */
+    color: rgb(0, 0, 0); /* Cor do texto em preto */
 
 }
 div#interface {
@@ -13,11 +17,28 @@ div#interface {
 }
 header#cabecalho img#icone {
     position: absolute;
-    left: 780px; /* Alinha o ícone à direita */
+    left: 1000px; /* Alinha o ícone à direita */
     top: 40px;
 }
 header#cabecalho {
-    
+    border-bottom: 1px solid #030303 solid; /* Borda inferior do cabeçalho */
+    height: 150px; /* Altura do cabeçalho */
+}
+header#cabecalho h1 {
+    font-family: 'fontelogo', Helvetica, sans-serif;
+    font-size: 30pt; /* Tamanho da fonte do título */
+    color: #000000; /* Cor do título em preto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /* Sombra para o título */
+    padding: 0px; /* Remove o preenchimento */
+    margin-bottom: 4px; /* Remove a margem inferior */
+}
+header#cabecalho h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt; /* Tamanho da fonte do subtítulo */
+    color: #8888; /* Cor do subtítulo em preto */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6); /* Sombra para o subtítulo */
+    padding: 0px; /* Remove o preenchimento */
+    margin-top: 0px; /* Remove a margem superior */
 }
 p {
     text-align: justify;
@@ -28,6 +49,8 @@ figure.fotolegenda {
     position: relative;
     border: 8px solid white; /* Borda branca de 8px */
     box-shadow: 1px 1px 4px black; /* Sombra para dar profundidade */
+    width: 60%; /* Ajusta a largura do contêiner */
+    margin: 60px auto; /* Centraliza o contêiner com margem */
 }
 figure.fotolegenda img {
     width: 100%; /* Ajusta a largura da imagem ao contêiner */
@@ -59,7 +82,7 @@ nav#menu ul {
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
     position: absolute; /* Posiciona o menu de forma absoluta */
     top: -20px; /* Alinha o menu ao topo */
-    left: 400px; /* Alinha o menu à direita */
+    left: auto; /* Alinha o menu à direita */
     
 
 }
@@ -84,4 +107,27 @@ nav#menu a {
 nav#menu a:hover {
     color: white; /* Cor do link ao passar o mouse */
     text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+section#corpo {
+    display: block; /* Exibe o corpo como um bloco */
+    width: 500px; /* Largura do corpo */
+    float: left; /* Permite que o corpo flutue à esquerda */
+    border-right: 1px solid #000000; /* Borda direita do corpo */
+    padding-right: 20px; /* Espaçamento interno à direita */
+}
+aside#lateral {
+    display: block;
+    width: 350px; /* Largura da barra lateral */
+    float: right; /* Permite que a barra lateral flutue à direita */
+}
+footer#rodape {
+    clear: both; /* Limpa os elementos flutuantes */
+    border-top: 1px solid #030303; /* Borda superior do rodapé */
+
+}
+footer#rodape p {
+    text-align: center; /* Centraliza o texto do rodapé */
+    font-size: 10pt; /* Tamanho da fonte do rodapé */
+    color: #000000; /* Cor do texto do rodapé em preto */
+    padding: 10px; /* Espaçamento interno */
 }
