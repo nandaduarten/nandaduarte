@@ -101,16 +101,18 @@ nav#menu {
 nav#menu ul {
     list-style: none; /* Remove os marcadores da lista */
     text-transform: uppercase; /* Transforma o texto em maiúsculas */
-    display: flex; /* Exibe os itens do menu em linha */
-    gap: 5px; /* Espaçamento entre os itens */
+   
     margin: 0; /* Remove a margem da lista */
     padding: 0; /* Remove o preenchimento da lista */
+    text-align: center; /* Centraliza o texto do menu */
     
 
 }
 nav#menu li {
+    display: inline-block; /* Exibe os itens do menu em linha */
    background-color: #888787;
    padding: 10px; /* Espaçamento interno */
+   margin: 2px;
    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
 }
 nav#menu li:hover {
