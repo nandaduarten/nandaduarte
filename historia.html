@@ -6,8 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube de Regatas do Flamengo</title>
     <link rel="stylesheet" href="style.css/style.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        article h1 {
+            font-size: 15pt;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 5px;
+            margin: 0px;
+        }
+
+        article {
+            margin-bottom: 100px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            /* evita espaços extras */
+        }
+    </style>
 </head>
 <script src="javascript.js/funcoes.js"></script>
+
 <body>
     <div id="interface">
 
@@ -22,14 +53,96 @@
         <nav id="menu">
             <h1>Menu Principal</h1>
             <ul>
-                <li onmouseover="mudafoto('botaohome.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a href="index.html">Home</a></li>
-                <li onmouseover="mudafoto('historia.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a href="historia.html">História do Clube</a></li>
-                <li onmouseover="mudafoto('noticia.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a href="noticias.html">Notícias</a></li>
-                <li onmouseover="mudafoto('multimidia.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a href="multimidia.html">Fotos e Vídeos</a></li>
-                <li onmouseover="mudafoto('redes-sociais.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a href="redessociais.html">Redes Sociais</a></li>
-                <li onmouseover="mudafoto('jogotabela.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a href="jogostabelas.html">Jogos e Tabelas</a></li>
+                <li onmouseover="mudafoto('botaohome.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a
+                        href="index.html">Home</a></li>
+                <li onmouseover="mudafoto('historia.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a
+                        href="historia.html">História do Clube</a></li>
+                <li onmouseover="mudafoto('noticia.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a
+                        href="noticias.html">Notícias</a></li>
+                <li onmouseover="mudafoto('multimidia.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a
+                        href="multimidia.html">Fotos e Vídeos</a></li>
+                <li onmouseover="mudafoto('redes-sociais.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a
+                        href="redessociais.html">Redes Sociais</a></li>
+                <li onmouseover="mudafoto('jogotabela.png')" onmouseout="mudafoto('logo-flamengo-antigo-256.png')"><a
+                        href="jogostabelas.html">Jogos e Tabelas</a></li>
             </ul>
         </nav>
+
+        <article id="topo">
+            <header>
+                <h1>O Inicio de uma Paixão</h1>
+            </header>
+            <img id="minhafoto" src="iniciodahistoria.jpg">
+
+            <p>O Clube de Regatas do Flamengo foi fundado em 17 de novembro de 1895, inicialmente como um clube de remo,
+                com o
+                objetivo de competir nas águas da Baía de Guanabara. A entrada do futebol no clube ocorreu em 1912, após
+                um
+                grupo de dissidentes do Fluminense decidir se juntar ao Flamengo, iniciando uma nova era para o clube. O
+                Flamengo, conhecido como o "Mais Querido" e "Mengão", é um dos clubes de futebol mais populares e
+                vitoriosos
+                do
+                Brasil, com uma rica história e inúmeros títulos.</p>
+        </article>
+        <article id="fundacao">
+            <header>
+                <h1>Fundação e Primeiros Anos</h1>
+            </header>
+            <img id="minhafoto" src="fundadores-600x393.jpg">
+
+            <p>O Flamengo foi fundado por um grupo de jovens do bairro do Flamengo, no Rio de Janeiro, com o objetivo de
+                praticar remo.
+                As cores originais do clube eram azul e amarelo, mas foram alteradas para preto e vermelho em 1896,
+                devido a
+                problemas com tecidos importados e desbotamento.
+                O clube passou a se chamar Clube de Regatas do Flamengo em 1902, e em 1912, o futebol foi introduzido.
+            </p>
+        </article>
+        <article id="futebol">
+            <header>
+                <h1>A Ascensão do Futebol:</h1>
+            </header>
+            <img id="minhafoto" src="fla-flu.jpg">
+            <p>A equipe de futebol foi criada após uma cisão no Fluminense, onde dissidentes decidiram se juntar ao
+                Flamengo,
+                expandindo o clube para o futebol.
+                Em 1912, o Flamengo conquistou seu primeiro Campeonato Carioca, marcando o início de uma trajetória de
+                sucesso
+                no futebol.
+                O clube se tornou uma força no futebol brasileiro, conquistando inúmeros títulos estaduais, nacionais e
+                internacionais.</p>
+        </article>
+        <article id="idolotorcida">
+            <header>
+                <h1>Ídolos e Torcida:</h1>
+            </header>
+            <img id="minhafoto" src="Zico.jpg">
+            <p>O Flamengo revelou e abrigou grandes jogadores ao longo de sua história, como Zico, Júnior, Leonidas da
+                Silva,
+                entre outros.
+                A torcida do Flamengo, conhecida como "Nação Rubro-Negra", é uma das maiores e mais apaixonadas do
+                Brasil,
+                com
+                milhões de torcedores espalhados por todo o país e no exterior.
+                O Flamengo é conhecido por sua forte identidade cultural e por representar a paixão do povo carioca e
+                brasileiro
+                pelo futebol.</p>
+        </article>
+        <article id="titulos">
+            <header>
+                <h1>Títulos e Reconhecimentos:</h1>
+            </header>
+            <img id="minhafoto" src="libertadores.jpeg">
+            <p>O Flamengo possui um extenso currículo de títulos, incluindo diversos Campeonatos Brasileiros, Copas do
+                Brasil,
+                Campeonatos Cariocas e a Copa Libertadores da América, além de títulos internacionais.
+                O clube também é reconhecido por sua participação em grandes públicos e recordes de torcida nos
+                estádios.
+                A história do Flamengo é marcada por momentos de glória, superação e paixão, consolidando sua posição
+                como
+                um
+                dos principais clubes de futebol do mundo.</p>
+        </article>
 
         <footer id="rodape">
             <p>Copyright &copy; 2025 - Fernanda Duarte <br>
