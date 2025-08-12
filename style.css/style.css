@@ -7,6 +7,16 @@ body {
     color: rgb(0, 0, 0); /* Cor do texto em preto */
 
 }
+
+a {
+    color: #000000; /* Cor do link em preto */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+a :hover {
+    color: #606060; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
 div#interface {
     width: 900px;
     background-color: #ffffff;
@@ -120,7 +130,7 @@ nav#menu a:hover {
 }
 section#corpo {
     display: block; /* Exibe o corpo como um bloco */
-    width: 60%; /* Largura do corpo */
+    width: 50%; /* Largura do corpo */
     float: left; /* Permite que o corpo flutue à esquerda */
     border-right: 1px solid #000000; /* Borda direita do corpo */
     padding-right: 20px; /* Espaçamento interno à direita */
@@ -150,6 +160,23 @@ aside#lateral {
     display: block;
     width: 35%; /* Largura da barra lateral */
     float: right; /* Permite que a barra lateral flutue à direita */
+    background-color: #dddddd; /* Cor de fundo da barra lateral */
+    padding: 10px; /* Espaçamento interno da barra lateral */
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+aside#lateral h1 {
+    font-family: 'fontelogo', Helvetica, sans-serif;
+    font-size: 13pt; /* Tamanho da fonte do título lateral */
+    color: #606060; /* Cor do título lateral */
+    margin-top: 0px; /* Remove a margem superior do título lateral */
+}
+aside#lateral h2 {
+    background-color: #606060; /* Cor de fundo do subtítulo lateral */
+    font-size: 13pt; /* Tamanho da fonte do link na barra lateral */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #ffffff; /* Cor do texto do link na barra lateral */
+    padding: 5px;
 }
 
 footer#rodape {
